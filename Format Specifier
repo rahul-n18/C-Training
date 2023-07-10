@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main()
+{
+  int a, b;
+  printf("Enter the value of A\t");
+  scanf("%d", &a);  //%d-> format specifier &->address
+  
+  printf("Enter the value of B\t");
+  scanf("%d", &b);
+
+  printf("The Sum is %d", a+b);
+  return 0;
+}
