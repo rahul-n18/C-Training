@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Implicit Type Conversion
+    int a = 10;
+    float b = 5.5;
+    float sum = a + b;  // Implicit type conversion of 'a' from int to float
+
+    printf("Implicit Type Conversion:\n");
+    printf("Sum: %.2f\n", sum);
+
+    // Explicit Type Conversion (Type Casting)
+    float c = 3.14;
+    int rounded = (int)c;  // Explicit type casting of 'c' from float to int
+
+    printf("\nExplicit Type Conversion:\n");
+    printf("Rounded: %d\n", rounded);
+
+    return 0;
+}
+
