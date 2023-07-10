@@ -1,0 +1,74 @@
+
+#include <stdio.h>
+
+int main() {
+    // Arithmetic Operators
+    int a = 10, b = 4;
+    int sum = a + b;
+    int difference = a - b;
+    int product = a * b;
+    int quotient = a / b;
+    int remainder = a % b;
+
+    printf("Arithmetic Operators:\n");
+    printf("Sum: %d\n", sum);
+    printf("Difference: %d\n", difference);
+    printf("Product: %d\n", product);
+    printf("Quotient: %d\n", quotient);
+    printf("Remainder: %d\n", remainder);
+
+    // Relational Operators
+    int x = 5, y = 3;
+    int isEqual = (x == y);
+    int isNotEqual = (x != y);
+    int isLessThan = (x < y);
+    int isGreaterThan = (x > y);
+    int isLessThanOrEqual = (x <= y);
+    int isGreaterThanOrEqual = (x >= y);
+
+    printf("\nRelational Operators:\n");
+    printf("Is Equal: %d\n", isEqual);
+    printf("Is Not Equal: %d\n", isNotEqual);
+    printf("Is Less Than: %d\n", isLessThan);
+    printf("Is Greater Than: %d\n", isGreaterThan);
+    printf("Is Less Than or Equal: %d\n", isLessThanOrEqual);
+    printf("Is Greater Than or Equal: %d\n", isGreaterThanOrEqual);
+
+    // Logical Operators
+    int p = 1, q = 0;
+    int logicalAnd = (p && q);
+    int logicalOr = (p || q);
+    int logicalNotP = !p;
+    int logicalNotQ = !q;
+
+    printf("\nLogical Operators:\n");
+    printf("Logical AND: %d\n", logicalAnd);
+    printf("Logical OR: %d\n", logicalOr);
+    printf("Logical NOT for P: %d\n", logicalNotP);
+    printf("Logical NOT for Q: %d\n", logicalNotQ);
+
+    // Assignment Operators
+    int num = 5;
+    num += 2;
+    num -= 1;
+    num *= 3;
+    num /= 2;
+    num %= 4;
+
+    printf("\nAssignment Operators:\n");
+    printf("Result: %d\n", num);
+
+    // Increment and Decrement Operators
+    int count = 10;
+    count++;
+    int newCount = count--;
+    int finalCount = --count;
+
+    printf("\nIncrement and Decrement Operators:\n");
+    printf("Count: %d\n", count);
+    printf("New Count: %d\n", newCount);
+    printf("Final Count: %d\n", finalCount);
+
+    return 0;
+}
+
