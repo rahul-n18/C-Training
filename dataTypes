@@ -1,0 +1,60 @@
+
+#include <stdio.h>
+
+int main() {
+    // Integer Types
+    int age = 25;
+    short quantity = 100;
+    long population = 8000000;
+    unsigned int count = 200;
+    
+    // Floating-Point Types
+    float weight = 68.5;
+    double pi = 3.14159;
+    long double largeValue = 1234567890.123456789;
+
+    // Character Type
+    char grade = 'A';
+
+    // Void Type
+    void *ptr = NULL;
+
+    // Enumerated Type
+    enum Colors { RED, GREEN, BLUE };
+    enum Colors color = BLUE;
+
+    // Derived Types
+    int numbers[5] = { 1, 2, 3, 4, 5 };
+    int *ptrToAge = &age;
+    
+    struct Person {
+        char name[20];
+        int age;
+    };
+    struct Person person1 = { "John", 30 };
+
+    union Data {
+        int intValue;
+        float floatValue;
+        char stringValue[20];
+    };
+    union Data data;
+    data.intValue = 42;
+
+    printf("Age: %d\n", age);
+    printf("Quantity: %hd\n", quantity);
+    printf("Population: %ld\n", population);
+    printf("Count: %u\n", count);
+    printf("Weight: %f\n", weight);
+    printf("Pi: %lf\n", pi);
+    printf("Large Value: %Lf\n", largeValue);
+    printf("Grade: %c\n", grade);
+    printf("Pointer: %p\n", ptr);
+    printf("Color: %d\n", color);
+    printf("Numbers: %d, %d, %d, %d, %d\n", numbers[0], numbers[1], numbers[2], numbers[3], numbers[4]);
+    printf("Pointer to Age: %p\n", ptrToAge);
+    printf("Person: %s, %d\n", person1.name, person1.age);
+    printf("Data: %d\n", data.intValue);
+
+    return 0;
+}
